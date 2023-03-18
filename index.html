@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/tabicon.ico" type="image/x-icon">
+    <title>Farhan Mahmood | Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/c6f9213a78.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/namelogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenuAndScrollTo('#header')">Home</a></li>
+                    <li><a href="#about" onclick="closemenuAndScrollTo('#about')">About</a></li>
+                    <li><a href="#skills" onclick="closemenuAndScrollTo('#skills')">Skills</a></li>
+                    <li><a href="#projects" onclick="closemenuAndScrollTo('#projects')">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenuAndScrollTo('#contact')">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+
+                <h1>Hi, I'm <span>Farhan Mahmood</span>.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------About------------ -->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/farhanpic.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Heyy! I am Frontend Developer, Seeking a challenging and rewarding career in a professionally oriented organization where I can
+                        use my experience, skills and education most effectively to achieve organizational and personal
+                        goals.</p>
+                    <div class="tab-titles">
+                        <P class="tab-links active-link" onclick="opentab('skills')">Skills</P>
+                        <P class="tab-links" onclick="opentab('education')">Education</P>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML, CSS, JAVASCRIPT</span><br>Web development</li>
+                            <li><span>REACT-NATIVE</span><br>Mobile App development</li>
+                            <li><span>CPP, JAVA</span><br>Basic Programming</li>
+                            <li><span>SQL, MongoDB</span><br>Basic Backend</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelors of Computer Science (2021-present)</span><br>COMSATS University Islamabad Lahore
+                                Campus</li>
+                            <li><span>Intermediate (2018-2020)</span><br>Govt. College University Lahore</li>
+                            <li><span>Matric (2016-2018)</span><br>The Golden Gate High School Lahore</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- -----------skills------------ -->
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>"I have expertise in HTML, CSS, and JavaScript, which I utilize to create modern, responsive, and
+                        user-friendly websites. My proficiency in these programming languages enables me to design and
+                        develop engaging and functional websites for clients. I stay up-to-date with the latest web
+                        development trends and technologies, which allows me to deliver high-quality work to my
+                        clients."</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Mobile app development</h2>
+                    <p>"I am a beginner in React Native mobile app development and have a basic understanding of the
+                        framework and JavaScript. With this knowledge, I am able to build simple mobile applications
+                        with basic functionalities. I am eager to learn more and improve my skills in this field."</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Basic Programming</h2>
+                    <p>"I am skilled in C++ and Java programming and proficient in implementing fundamental programming
+                        concepts such as variables, loops, and functions. I am committed to continued learning and
+                        improving my knowledge and skills in these languages."</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a href="skills.html" class="btn">See more</a>
+
+    </div>
+
+    </div>
+
+    <!-- -----------Projects------------ -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="images/project-1.jpeg">
+                    <div class="layer">
+                        <h3>Seattle Hotel Website</h3>
+                        <p>"This hotel website, created by Farhan using HTML, CSS, and JavaScript, has a clean and
+                            modern design with a responsive layout. Users can easily navigate through different pages to
+                            learn about the hotel's features, amenities, and room options with detailed descriptions and
+                            images."</p>
+                        <a href="https://farhanhere.github.io/Hotel-Website/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project-2.jpeg">
+                    <div class="layer">
+                        <h3>Wholesale Store Management System</h3>
+                        <p>"The Wholesale Store Management System, developed by Farhan, Zain & Hatim using C sharp and
+                            SQL, is a
+                            software project designed to manage inventory, sales, and customer management for a
+                            wholesale store. The system provides an easy-to-use interface for store owners and managers
+                            to monitor inventory, update prices, and generate sales reports."</p>
+                        <a href="https://github.com/farhanhere/Wholesale-Store-Management-System"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="projects.html" class="btn">See more</a>
+
+        </div>
+
+    </div>
+
+    <!-- -----------Contacts------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <a href="mailto:farhanhere29@gmail.com"><i
+                                class="fa-solid fa-paper-plane"></i></a>farhanhere29@gmail.com</p>
+                    <p><a href="https://api.whatsapp.com/send/?phone=923180432235&text&type=phone_number&app_absent=0"><i
+                                class="fa-brands fa-square-whatsapp"></i></a>+923180432235</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/FarHanMahmood1429"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://instagram.com/_farhan_here"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/_farhan_here"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://github.com/farhanhere"><i class="fa-brands fa-square-github"></i></a>
+
+                    </div>
+                    <a href="images/FarhanCV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    <span id="spinner" style="display:none; color: #61b752; margin-top: -40px;">Message submitting,
+                        please wait...</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright © Made by Farhan</p>
+        </div>
+
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+
+    <script>
+        function closemenuAndScrollTo(sectionId) {
+            closemenu();
+            scrollToSection(sectionId);
+        }
+        function closemenu() {
+            document.getElementById("sidemenu").style.right = "-200px";
+        }
+        function openmenu() {
+            document.getElementById("sidemenu").style.right = "0";
+        }
+        function scrollToSection(sectionId) {
+            document.querySelector(sectionId).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwcXUlmr3A_79uWjsWUUzwOFCKlnK_h-ytUPVk_gh4PsKPBezZDd-Yb05QsU-sP-Kkr/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg")
+        const spinner = document.getElementById("spinner");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            spinner.style.display = "block"; // Show the loading spinner
+            msg.innerHTML = ""; // Clear any previous messages
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    spinner.style.display = "none"; // Hide the loading spinner
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 3000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+</body>
+
+</html>
